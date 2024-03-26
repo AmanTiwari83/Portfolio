@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg:  rgba(51, 110,246,.2);
+    --text: rgb(48, 48, 246);
+}
+html, body {
+    min-height: 100vh;
+    width: 100vw;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+    overflow-x: hidden;
+}
+#nav{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0px 90px 0px 90px;
+    overflow: hidden;
+}
+
+#page1{
+    /* min-height: 100vh; */
+    position: relative;
+    width: 100vw;
+    background: var(--bg);
+    width: 100%;
+    overflow: hidden;
+}
+#front{
+    min-height: 80vh;
+    width: 100%;
+    padding: 140PX 20px 20px 90px;
+}
+#logo{
+    margin-top: 10px;
+    font-weight: 700;
+}
+#front h5{
+    margin-bottom: 15px;
+    letter-spacing: 1px ;
+}
+#front h1{
+    font-size: 100px;
+    line-height: 100px;
+    letter-spacing: -5px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#front h1 span{
+    color: var(--text);
+}
+#front #bottom{
+    text-transform: capitalize;
+    margin: 20px 0px 30px 0px;
+}
+#resume{
+    background-color: var(--text);
+    padding: 6px 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    
+    cursor: pointer;
+}
+#icons a{
+    color: black !important;
+}
+#resume a{
+    text-decoration: none;
+    color: white;
+}
+#front #project{
+    padding: 6px 15px;
+    margin-left: 15px;
+    font-weight: 600;
+    background: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+#front #icons{
+    margin-top: 30px;
+    padding-left: 10px;
+    
+}
+#front #icons i{
+    margin-right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 4px;
+}
+#page2{
+    position: relative;
+    min-height: 50vh;
+    width: 100%;
+    
+}
+#first{
+    overflow: hidden;
+    position: absolute;
+    /* top: -15px; */
+    z-index: -1;
+}
+#first path{
+    height: 50px !important;
+    width: 100vw;
+    
+}
+#page3{
+    overflow: hidden;
+}
+#services{
+    padding:100px 80px !important;
+    text-align: center;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+.small{
+    color: var(--text);
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: 20px !important;
+    /* margin-bottom: 35px !important; */
+}
+.big{
+    font-weight: 700;
+}
+.bigs{
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.er:nth-child(1n){
+    margin-top: 70px;
+}
+.er:last-child{
+    margin-top: 50px;
+}
+.er{   
+    text-align: start;
+    transition: all ease .5s;
+    border-radius: 10px;
+    background-color: var(--bg);
+}
+.er:hover{
+    box-shadow: 10px 10px 20px gray;
+    /* transform: scale(1.05); */
+    transition: all ease .5s;
+}
+.er:hover h4{
+    color: var(--text);
+}
+.er:hover i{
+    color: var(--text);
+}
+.er h4{
+    font-weight: 700;
+}
+.er i{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#projects{
+    padding: 80px;
+    text-align: center;
+    background-color: var(--bg);
+}
+#view{
+    color: white;
+}
+#project a{
+    color: black !important;
+}
+.card-name{
+    font-weight: 600;
+}
+.bottom{
+    border-top: 1px solid black;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding:15px 5px;
+    margin-top: 20px;
+}
+.bottom button{
+    background-color: var(--text);
+    padding: 6px 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;  
+    cursor: pointer;
+    color: white;
+}
+.heart{
+    font-size: 25px;
+    
+}
+#page4{
+    padding: 80px;
+    background-color: rgba(51, 110,246,.3);
+    text-align: center;
+    position: relative;
+    overflow:hidden;
+}
+#page4>#myresume{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+#myresume button{
+    
+    padding: 6px 15px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#myresume button:hover{
+    background-color: var(--text);
+}
+.about1,.about2{
+    background-color: white;
+    /* color: white; */
+    padding: 50PX;
+}
+.about1,.about2 h4{
+    margin-bottom: 20px;
+    
+}
+.education1,.education2{
+    background-color: white;
+    padding: 50px !important;
+    display: none;
+}
+.education h4{
+    margin-bottom: 20px;
+}
+#page5{
+    padding: 80px;
+    /* background-color: rgba(51, 110,246,.3); */
+    text-align: center;
+    position: relative;
+    overflow:hidden;
+}
+#page6{
+    padding: 80px;
+    padding-bottom: 10px !important;
+    background-color: var(--bg);
+    text-align: center;
+    padding-bottom: 50px;
+    overflow:hidden;
+    
+}
+.contact{
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+    margin-top: 60px !important;
+}
+.contact h3{
+    font-weight: bold;
+}
+.contact h6{
+    font-weight: bold;
+    
+}
+.contact h5{
+    margin: 20px 0px;
+}
+.contact h6 a{
+    color: black !important;
+}
+a{
+    text-decoration: none !important;
+    /* color: #000 !important; */
+}
+footer{
+    /* background-color: var(--bg); */
+    height: 50px;
+    margin: 80px 100px 0px 100px;
+    border-top: 1px solid black;
+
+}
+.skill{
+    background-color: var(--bg);
+    padding: 50px 30PX !important;
+    border-radius: 10px;
+}
+.skill h4{
+    font-weight: 600;
+    margin: 20px 0px;
+}
+.skill h6{
+    font-weight: 100;
+    font-size: 17px;
+    color: rgb(54, 49, 49);
+}
+.link{
+    position: absolute;
+    top: -20px;
+    visibility: hidden;
+}
+.p{
+    transition: all ease .5s;
+}
+.p:hover{
+    box-shadow: 10px 10px 20px gray;
+    /* transform: scale(1.05); */
+    transition: all ease .5s;
+}
+.p:hover h4{
+    color: var(--text);
+}
+@media screen and (max-width:600px) {
+    
+    #nav{
+        padding: 0px 30px;
+    }
+    #front{
+        padding-left: 40px;
+        padding-right: 10px;
+        line-height: 40px;
+        width: 100vw;
+        
+    }
+    #front h1{
+        font-size: 80px;
+        line-height: 70px;
+    }
+    #services{
+        padding: 50px 10px !important;
+    }
+    .ser{
+        padding:0px 20px !important;
+
+    }
+    .er{
+        padding:0px 10px !important;
+    }
+    #projects{
+        padding: 50px 10px;
+    }
+    #page3{
+        position: relative;
+    }
+    #page4,#page5{
+        position: relative !important;
+        padding: 60px 30px;
+    }
+    #page6{
+        padding: 50px 30px 0px 30px;
+    }
+    .contact{
+        padding: 30px;
+    }
+    #page4>#myresume{
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 40px auto;
+    }
+    footer{
+        margin: 30px 10px;
+    }
+    
+    .skill{
+        padding: 30px 20px !important;
+    }
+    .sk{
+        padding: 30px 10px !important;
+    }
+    
+    .link{
+        position: absolute;
+        top: -80px !important;
+        /* visibility: hidden; */
+    }
+    .about1,.about2{
+        padding: 30px 20px !important;
+    }
+    .education1,.education2{
+        padding: 30px 20px !important;
+    }
+    .contact{
+        padding: 30px 20px !important;
+    }
+}
