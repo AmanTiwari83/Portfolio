@@ -8,7 +8,7 @@
     --text: rgb(48, 48, 246);
 }
 html, body {
-    min-height: 100vh;
+    min-height: 100%;
     width: 100vw;
     /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
