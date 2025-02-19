@@ -35,7 +35,7 @@ html, body {
 #front{
     min-height: 80vh;
     width: 100%;
-    padding: 140PX 20px 20px 90px;
+    padding: 120PX 20px 40px 90px;
 }
 #logo{
     margin-top: 10px;
@@ -295,6 +295,10 @@ footer{
     background-color: var(--bg);
     padding: 50px 30PX !important;
     border-radius: 10px;
+    img{
+        background-color: transparent;
+        mix-blend-mode: multiply;
+    }
 }
 .skill h4{
     font-weight: 600;
@@ -324,10 +328,10 @@ footer{
 @media screen and (max-width:600px) {
     
     #nav{
-        padding: 0px 30px;
+        padding: 0px 23px;
     }
     #front{
-        padding-left: 40px;
+        padding-left: 20px;
         padding-right: 10px;
         line-height: 40px;
         width: 100vw;
